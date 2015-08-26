@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/blue_light"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView android:text="@string/headline" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:id="@+id/headline"
+                android:gravity="center"
+                android:textColor="@color/blue_dark"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_below="@+id/headline"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="20dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name_spotify"
+                        android:id="@+id/spotify"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/blue"
+                        android:onClick="onClickAppButton"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="10dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name_scores"
+                        android:id="@+id/scores"
+                        android:onClick="onClickAppButton"
+                        android:background="@color/blue"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name_library"
+                        android:id="@+id/library"
+                        android:onClick="onClickAppButton"
+                        android:background="@color/blue"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name_buildit"
+                        android:id="@+id/buildit"
+                        android:onClick="onClickAppButton"
+                        android:background="@color/blue"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name_reader"
+                        android:id="@+id/reader"
+                        android:onClick="onClickAppButton"
+                        android:background="@color/blue"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name_own"
+                        android:id="@+id/own"
+                        android:onClick="onClickAppButton"
+                        android:background="@color/blue_dark"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
